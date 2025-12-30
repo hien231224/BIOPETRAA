@@ -3,23 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIOPETRA - Giải pháp Sinh học Bền vững</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Thiết lập chung */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background-color: #f4f7f6; }
+    <title>BIOPETRA - HUIT Research Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        /* Thanh điều hướng */
-        nav { background: #fff; padding: 15px 10% ; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { font-size: 24px; font-weight: bold; color: #2d6a4f; text-transform: uppercase; }
-        .nav-links { list-style: none; display: flex; }
-        .nav-links li { margin-left: 25px; }
-        .nav-links a { text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
-        .nav-links a:hover { color: #2d6a4f; }
+    <header>
+        <nav class="container">
+            <div class="logo">BIOPETRA<span>.HUIT</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Nhân sự ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#pi">Chủ nhiệm (PI)</a>
+                        <a href="#team">Đội ngũ cộng sự</a>
+                    </div>
+                </li>
+                <li><a href="#research">Nghiên cứu</a></li>
+                <li><a href="#publications">Công bố</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        /* Banner chính (Hero Section) */
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1532187875605-1ef1c016419e?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; max-width: 800px; margin-bottom: 30px; }
-        .btn-cta { background: #2d6a4f; color: white; padding: 12px 30px; text-decoration: none
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sustainable Bio-Cementation Solutions</h1>
+            <p>BIOPETRA là nhóm nghiên cứu tiên phong tại HUIT, tập trung vào ứng dụng công nghệ vi sinh để tạo ra vật liệu xây dựng bền vững.</p>
+            <a href="#about" class="btn">Tìm hiểu thêm</a>
+        </div>
+    </section>
+
+    <section id="about" class="container section">
+        <h2 class="section-title">Câu chuyện & Công nghệ</h2>
+        <div class="about-grid">
+            <div class="about-item">
+                <h3>Vấn đề</h3>
+                <p>Ngành xây dựng truyền thống tạo ra lượng lớn khí thải CO2. Chúng ta cần giải pháp sinh học để giảm thiểu tác động môi trường.</p>
+            </div>
+            <div class="about-item">
+                <h3>Công nghệ MICP</h3>
+                <p>Quá trình vi khuẩn tạo ra kết tủa Canxi Carbonat (CaCO3), giúp gắn kết các hạt đất đá hoặc tự chữa lành vết nứt bê tông.</p>
+            </div>
+            <div class="about-item">
+                <h3>Tầm nhìn</h3>
+                <ul>
+                    <li>Dẫn đầu nghiên cứu MICP tại Việt Nam.</li>
+                    <li>Ứng dụng thực tiễn vào hạ tầng xanh.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Giá trị cốt lõi</h2>
+            <div class="research-grid">
+                <div class="card">
+                    <h3>Bio-solidification</h3>
+                    <p>Gia cố nền đất yếu bằng phương pháp sinh học, tăng cường độ chịu lực tự nhiên.</p>
+                </div>
+                <div class="card">
+                    <h3>Self-healing Concrete</h3>
+                    <p>Phát triển bê tông có khả năng tự chữa lành vết nứt nhờ hoạt động của vi khuẩn.</p>
+                </div>
+                <div class="card">
+                    <h3>Heavy Metal Treatment</h3>
+                    <p>Ứng dụng MICP trong việc cô lập và xử lý kim loại nặng trong môi trường.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BIOPETRA Research Group - Đại học Công nghiệp Thực phẩm TP.HCM (HUIT)</p>
+    </footer>
+
+</body>
+</html>
